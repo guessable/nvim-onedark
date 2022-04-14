@@ -199,28 +199,28 @@ function M.setup(config)
     TSDanger = { fg = c.bg, bg = c.error },
     TSConstructor = {fg = c.blue}, -- For constructor calls and definitions: `= { }` in Lua, and Java constructors.
     -- TSConditional       = { };    -- For keywords related to conditionnals.
-    TSConstant = { fg = c.yellow }, -- For constants
+    TSConstant = { fg = c.cyan }, -- For constants
     TSConstBuiltin = { fg = c.orange }, -- For constant that are built in the language: `nil` in Lua.
     -- TSConstMacro        = { };    -- For constants that are defined by macros: `NULL` in C.
     -- TSError             = { };    -- For syntax/parser errors.
     -- TSException         = { };    -- For exception related keywords.
     TSField = { fg = c.cyan }, -- For fields.
     -- TSFloat             = { };    -- For floats.
-    -- TSFunction          = { };    -- For function (calls and definitions).
+    TSFunction          = { fg = c.blue, style = config.functionStyle };    -- For function (calls and definitions).
     -- TSFuncBuiltin       = { };    -- For builtin functions: `table.insert` in Lua.
     -- TSFuncMacro         = { };    -- For macro defined fuctions (calls and definitions): each `macro_rules` in Rust.
     TSInclude = { fg = c.purple }, -- For includes: `#include` in C, `use` or `extern crate` in Rust, or `require` in Lua.
     TSKeyword = { fg = c.purple, style = config.keywordStyle }, -- For keywords that don't fall in previous categories.
     TSKeywordFunction = { fg = c.purple, style = config.functionStyle }, -- For keywords used to define a fuction.
     TSLabel = { fg = c.blue }, -- For labels: `label:` in C and `:label:` in Lua.
-    -- TSMethod            = { };    -- For method calls and definitions.
+    TSMethod            = { fg = c.blue ,style = config.functionStyle};    -- For method calls and definitions.
     TSNamespace = { fg = c.red }, -- For identifiers referring to modules and namespaces.
     -- TSNone              = { };    -- TODO: docs
     -- TSNumber            = { };    -- For all numbers
     TSOperator = { fg = c.purple }, -- For any operator: `+`, but also `->` and `*` in C.
     TSParameter = { fg = c.red }, -- For parameters of a function.
     -- TSParameterReference= { };    -- For references to parameters of a function.
-    TSProperty = { fg = c.red }, -- Same as `TSField`.
+    -- TSProperty = { fg = c.red }, -- Same as `TSField`.
     TSPunctDelimiter = { fg = c.fg }, -- For delimiters ie: `.`
     TSPunctBracket = { fg = c.fg_dark }, -- For brackets and parens.
     TSPunctSpecial = { fg = c.fg }, -- For special punctutation that does not fall in the catagories before.
@@ -230,7 +230,7 @@ function M.setup(config)
     TSStringEscape = { fg = c.red }, -- For escape characters within a string.
     -- TSSymbol            = { };    -- For identifiers referring to symbols or atoms.
     TSType = { fg = c.yellow },    -- For types.
-    -- TSTypeBuiltin       = { };    -- For builtin types.
+    TSTypeBuiltin       = { fg = c.blue, style = config.functionStyle};    -- For builtin types.
     TSTag = { fg = c.red }, -- Tags like html tag names.
     TSTagDelimiter = { fg = c.red }, -- Tag delimiter like `<` `>` `/`
     TSTagAttribute = { fg = c.orange, style = config.keywordStyle },
@@ -246,6 +246,17 @@ function M.setup(config)
     -- TSTitle             = { };    -- Text that is part of a title.
     -- TSLiteral           = { };    -- Literal text.
     -- TSURI               = { };    -- Any URI like a link or email.
+
+		-- cpp
+		cppTSType = { fg = c.orange },
+
+		 -- markdown
+		TSURI = { fg = c.blue, style = 'underline' },
+		TSLiteral = { fg = c.red },
+		TSTextReference = { fg = c.blue },
+		TSTitle = { fg = c.red, style = 'bold' },
+		TSStrong = { style = 'bold' },
+		TSEmphasis = { style = 'bold' },
 
     -- Lua
     -- luaTSProperty = { fg = c.red }, -- Same as `TSField`.
@@ -289,7 +300,7 @@ function M.setup(config)
 		NvimTreeSymlink = { fg = c.purple },
 		NvimTreeFolderName = { fg = c.blue },
 		NvimTreeOpenedFolderName = { fg = c.blue, style = 'bold' },
-		NvimTreeNormal = { fg = c.orange, bg = c.bg_sidebar },
+		NvimTreeNormal = { fg = c.grey, bg = c.bg_sidebar },
 
     LspDiagnosticsError = { fg = c.error },
     LspDiagnosticsWarning = { fg = c.warning },
@@ -325,7 +336,7 @@ function M.setup(config)
     -- Barbar
     BufferTabpageFill = { bg = c.bg2, fg = c.bg_visual }, -- filler after the buffer section
 
-    BufferCurrent = { bg = c.bg, fg = c.orange },
+    BufferCurrent = { bg = c.bg, fg = c.green },
     BufferCurrentIndex = { bg = c.bg, fg = c.blue },
     BufferCurrentMod = { bg = c.bg, fg = c.yellow },
     BufferCurrentSign = { link = 'BufferCurrentIndex' },
@@ -399,6 +410,9 @@ function M.setup(config)
     NotifyINFOTitle = { fg = c.diagnostics.info },
     NotifyDEBUGTitle = { fg = c.diagnostics.hint },
     NotifyTRACETitle = { fg = c.purple },
+
+		-- indent_blackline
+		IndentBlanklineChar = { fg = c.bg1, style = 'NONE' },
 
 		-- Telescope
 		TelescopeBorder = {fg = c.cyan},
