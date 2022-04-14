@@ -287,7 +287,7 @@ function M.setup(config)
     NvimTreeImageFile = {fg = c.fg_sidebar},
     NvimTreeSymlink = {fg = c.purple},
     NvimTreeFolderName = {fg = c.blue},
-    NvimTreeOpenedFolderName = {fg = c.blue, style = "bold"},
+    NvimTreeOpenedFolderName = {fg = c.purple, style = "bold"},
     NvimTreeNormal = {fg = c.grey, bg = c.bg_sidebar},
     LspDiagnosticsError = {fg = c.error},
     LspDiagnosticsWarning = {fg = c.warning},
