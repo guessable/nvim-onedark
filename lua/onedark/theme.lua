@@ -237,21 +237,15 @@ function M.setup(config)
     TSStrong = {fg = c.fg, style = config.keywordStyle}, -- For text to be represented with emphasis.
     -- TSUnderline         = { };    -- For text to be represented with an underline.
     -- TSStrike            = { };    -- For strikethrough text.
-    -- TSTitle             = { };    -- Text that is part of a title.
-    -- TSLiteral           = { };    -- Literal text.
-    -- TSURI               = { };    -- Any URI like a link or email.
-
-    -- cpp
-    cppTSType = {fg = c.orange},
-    -- markdown
     TSURI = {fg = c.blue, style = "underline"},
     TSLiteral = {fg = c.red},
     TSTextReference = {fg = c.blue},
     TSTitle = {fg = c.red, style = "bold"},
-    TSStrong = {style = "bold"},
-    TSEmphasis = {style = "bold"},
-    -- Lua
-    -- luaTSProperty = { fg = c.red }, -- Same as `TSField`.
+
+    -- cpp
+    cppTSType = {fg = c.orange},
+    -- LaTeX
+    latexTSFunction = {fg = c.cyan}, -- For function (calls and definitions).
 
     -- LspTrouble
     LspTroubleText = {fg = c.fg_dark},
