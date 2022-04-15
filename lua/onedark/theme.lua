@@ -136,11 +136,14 @@ function M.setup(config)
     mkdCodeEnd = {fg = c.yellow, style = "bold"},
     -- mkdLink = { fg = c.blue, style = "underline" },
 
+		markdownBlockquote = {fg = c.yellow,style = "bold"},
     markdownHeadingDelimiter = {fg = c.orange, style = "bold"},
     markdownCode = {fg = c.yellow},
     markdownCodeBlock = {fg = c.yellow},
     markdownH1 = {fg = c.red, style = "bold"},
     markdownH2 = {fg = c.blue, style = "bold"},
+    markdownH3 = {fg = c.orange, style = "bold"},
+    markdownH4 = {fg = c.purple, style = "bold"},
     markdownLinkText = {fg = c.blue, style = "underline"},
     debugPC = {bg = c.bg_sidebar}, -- used for highlighting the current line in terminal-debug
     debugBreakpoint = {bg = util.darken(c.info, 0.1), fg = c.info}, -- used for breakpoint colors in terminal-debug
@@ -241,12 +244,10 @@ function M.setup(config)
     TSLiteral = {fg = c.red},
     TSTextReference = {fg = c.blue},
     TSTitle = {fg = c.red, style = "bold"},
-
     -- cpp
     cppTSType = {fg = c.orange},
     -- LaTeX
     latexTSFunction = {fg = c.cyan}, -- For function (calls and definitions).
-
     -- LspTrouble
     LspTroubleText = {fg = c.fg_dark},
     LspTroubleCount = {fg = c.purple, bg = c.fg_gutter},
