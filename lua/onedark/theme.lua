@@ -138,7 +138,7 @@ function M.setup(config)
 
 		markdownBlockquote = {fg = c.yellow,style = "bold"},
     markdownHeadingDelimiter = {fg = c.orange, style = "bold"},
-    markdownCode = {fg = c.yellow},
+    markdownCode = {fg = c.green},
     markdownCodeBlock = {fg = c.yellow},
     markdownH1 = {fg = c.red, style = "bold"},
     markdownH2 = {fg = c.blue, style = "bold"},
@@ -312,7 +312,7 @@ function M.setup(config)
     healthWarning = {fg = c.warning},
     -- Barbar
     BufferTabpageFill = {bg = c.bg2, fg = c.bg_visual}, -- filler after the buffer section
-    BufferCurrent = {bg = c.bg, fg = c.cyan},
+    BufferCurrent = {bg = c.bg, fg = c.purple},
     BufferCurrentIndex = {bg = c.bg, fg = c.blue},
     BufferCurrentMod = {bg = c.bg, fg = c.yellow},
     BufferCurrentSign = {link = "BufferCurrentIndex"},
