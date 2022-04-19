@@ -136,7 +136,7 @@ function M.setup(config)
     mkdCodeEnd = {fg = c.yellow, style = "bold"},
     -- mkdLink = { fg = c.blue, style = "underline" },
 
-		markdownBlockquote = {fg = c.yellow,style = "bold"},
+    markdownBlockquote = {fg = c.yellow, style = "bold"},
     markdownHeadingDelimiter = {fg = c.orange, style = "bold"},
     markdownCode = {fg = c.green},
     markdownCodeBlock = {fg = c.yellow},
@@ -299,7 +299,7 @@ function M.setup(config)
     WhichKeyDesc = {fg = c.red},
     WhichKeySeperator = {fg = c.fg_gutter},
     WhichKeySeparator = {fg = c.fg_gutter},
-    WhichKeyFloat = {bg = c.bg},
+    WhichKeyFloat = {bg = c.bg_sidebar, fg = c.bg_visual},
     WhichKeyValue = {fg = c.dark5},
     -- LspSaga
     DiagnosticError = {fg = c.error},
@@ -311,7 +311,7 @@ function M.setup(config)
     healthSuccess = {fg = c.green},
     healthWarning = {fg = c.warning},
     -- Barbar
-    BufferTabpageFill = {bg = c.bg2, fg = c.bg_visual}, -- filler after the buffer section
+    BufferTabpageFill = {bg = c.bg_sidebar, fg = c.bg_visual}, -- filler after the buffer section
     BufferCurrent = {bg = c.bg, fg = c.purple},
     BufferCurrentIndex = {bg = c.bg, fg = c.blue},
     BufferCurrentMod = {bg = c.bg, fg = c.yellow},
