@@ -311,8 +311,8 @@ function M.setup(config)
     healthSuccess = {fg = c.green},
     healthWarning = {fg = c.warning},
     -- Barbar
-    BufferTabpageFill = {bg = c.bg_sidebar, fg = c.bg_visual}, -- filler after the buffer section
-    BufferCurrent = {bg = c.bg, fg = c.purple},
+    BufferTabpageFill = {bg = c.bg, fg = c.bg_visual}, -- filler after the buffer section
+    BufferCurrent = {bg = c.bg, fg = c.yellow},
     BufferCurrentIndex = {bg = c.bg, fg = c.blue},
     BufferCurrentMod = {bg = c.bg, fg = c.yellow},
     BufferCurrentSign = {link = "BufferCurrentIndex"},
