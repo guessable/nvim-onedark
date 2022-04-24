@@ -383,7 +383,11 @@ function M.setup(config)
     -- Telescope
     TelescopeBorder = {fg = c.cyan},
     TelescopeSelection = {fg = c.purple, bg = c.bg1},
-    TelescopeMatching = {fg = c.green}
+    TelescopeMatching = {fg = c.green},
+
+		-- symbols-outline
+		FocusedSymbol = {fg = c.yellow}
+
   }
 
   theme.defer = {}
