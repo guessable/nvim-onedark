@@ -245,7 +245,7 @@ function M.setup(config)
     TSTextReference = {fg = c.blue},
     TSTitle = {fg = c.red, style = "bold"},
     -- cpp
-    cppTSType = {fg = c.orange},
+    cppTSType = {fg = c.red},
     -- LaTeX
     latexTSFunction = {fg = c.cyan}, -- For function (calls and definitions).
     -- LspTrouble
