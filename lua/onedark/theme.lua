@@ -245,9 +245,9 @@ function M.setup(config)
     TSTextReference = {fg = c.blue},
     TSTitle = {fg = c.red, style = "bold"},
     -- cpp
-    cppTSType = {fg = c.red},
+    -- cppTSType = {fg = c.red},
     -- LaTeX
-    latexTSFunction = {fg = c.cyan}, -- For function (calls and definitions).
+    latexTSFunction = {fg = c.cyan},
     -- LspTrouble
     LspTroubleText = {fg = c.fg_dark},
     LspTroubleCount = {fg = c.purple, bg = c.fg_gutter},
@@ -333,7 +333,7 @@ function M.setup(config)
     HopNextKey2 = {fg = c.purple},
     HopUnmatched = {fg = c.grey},
     LightspeedGreyWash = {fg = c.dark5},
-    -- NVIM CMP - VSCode like highlights
+    -- NVIM CMP
     CmpItemAbbrMatch = {fg = c.purple},
     CmpItemAbbrMatchFuzzy = {fg = c.red},
     CmpItemKindFunction = {fg = c.orange},
@@ -362,32 +362,12 @@ function M.setup(config)
     CmpItemKindTypeParameter = {fg = c.orange},
     CmpItemAbbrDeprecated = {style = "strikethrough", fg = c.fg_gutter},
     CmpItemMenu = {fg = c.blue},
-    -- notify
-    NotifyERRORBorder = {fg = c.diagnostics.error},
-    NotifyWARNBorder = {fg = c.diagnostics.warn},
-    NotifyINFOBorder = {fg = c.diagnostics.info},
-    NotifyDEBUGBorder = {fg = c.diagnostics.hint},
-    NotifyTRACEBorder = {fg = c.purple},
-    NotifyERRORIcon = {fg = c.diagnostics.error},
-    NotifyWARNIcon = {fg = c.diagnostics.warn},
-    NotifyINFOIcon = {fg = c.diagnostics.info},
-    NotifyDEBUGIcon = {fg = c.diagnostics.hint},
-    NotifyTRACEIcon = {fg = c.purple},
-    NotifyERRORTitle = {fg = c.diagnostics.error},
-    NotifyWARNTitle = {fg = c.diagnostics.warn},
-    NotifyINFOTitle = {fg = c.diagnostics.info},
-    NotifyDEBUGTitle = {fg = c.diagnostics.hint},
-    NotifyTRACETitle = {fg = c.purple},
     -- indent_blackline
     IndentBlanklineChar = {fg = c.bg1, style = "NONE"},
     -- Telescope
     TelescopeBorder = {fg = c.cyan},
     TelescopeSelection = {fg = c.purple, bg = c.bg1},
     TelescopeMatching = {fg = c.green},
-
-		-- symbols-outline
-		FocusedSymbol = {fg = c.yellow}
-
   }
 
   theme.defer = {}
