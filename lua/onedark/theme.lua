@@ -245,7 +245,7 @@ function M.setup(config)
     TSTextReference = {fg = c.blue},
     TSTitle = {fg = c.red, style = "bold"},
     -- cpp
-    -- cppTSType = {fg = c.red},
+    cppTSType = {fg = c.red},
     -- LaTeX
     latexTSFunction = {fg = c.cyan},
     -- LspTrouble
@@ -367,7 +367,7 @@ function M.setup(config)
     -- Telescope
     TelescopeBorder = {fg = c.cyan},
     TelescopeSelection = {fg = c.purple, bg = c.bg1},
-    TelescopeMatching = {fg = c.green},
+    TelescopeMatching = {fg = c.green}
   }
 
   theme.defer = {}
