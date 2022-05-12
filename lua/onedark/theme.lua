@@ -54,7 +54,7 @@ function M.setup(config)
     NormalFloat = {fg = c.fg, bg = c.bg_float}, -- Normal text in floating windows.
     FloatBorder = {fg = c.cyan},
     Pmenu = {bg = c.bg, fg = c.fg}, -- Popup menu: normal item.
-    PmenuSel = {bg = c.bg_blue, fg = c.bg0}, -- Popup menu: selected item.
+    PmenuSel = {bg = c.cyan, fg = c.bg0}, -- Popup menu: selected item.
     PmenuSbar = {bg = util.lighten(c.bg_popup, 0.95)}, -- Popup menu: scrollbar.
     PmenuThumb = {bg = c.fg_gutter}, -- Popup menu: Thumb of the scrollbar.
     Question = {fg = c.blue}, -- |hit-enter| prompt and yes/no questions
