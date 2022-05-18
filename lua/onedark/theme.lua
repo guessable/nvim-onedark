@@ -31,7 +31,7 @@ function M.setup(config)
     DiffText = {bg = c.diff.text},
     EndOfBuffer = {fg = config.hideNonText and c.bg or c.fg_dark},
     ErrorMsg = {fg = c.error},
-    VertSplit = {fg = c.black},
+    VertSplit = {fg = "#000000"},
     Folded = {fg = c.blue, bg = c.black},
     FoldColumn = {bg = c.bg, fg = c.fg_gutter},
     SignColumn = {bg = config.transparent and c.none or c.bg, fg = c.fg_gutter},
